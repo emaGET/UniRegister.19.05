@@ -2,9 +2,7 @@
 internal class App
 {
     private List<Student> students = new List<Student>();
-
-
-        
+    
     public void Start()
     {
         bool isRunning = true;
@@ -36,7 +34,7 @@ internal class App
 
             // }
 
-            if (input == "1") PrintInfo();
+            if (input == "1") ShowStudents();
 
             else if (input == "2") AddNewStudent();
 
@@ -75,11 +73,11 @@ internal class App
 
     }
 
-    private void StudentsList()
+    private void ShowStudents()
     {
-        foreach (Student students in students)
+        foreach (Student student in students)
         {
-            Student.PrintInfo();
+            student.PrintInfo();
         }
     }
     
