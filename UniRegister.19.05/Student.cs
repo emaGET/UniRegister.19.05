@@ -18,7 +18,7 @@ namespace UniRegister._19._05
 
         public void PrintInfo()
         {
-            Console.WriteLine($"Student: {name},\nAge: {age},\nID: {studentId}\nCourse: {course}");
+            Console.WriteLine($"--- Student Info ---\n \nStudent: {name}\nAge: {age}\nID: {studentId}\nCourse: {course}\n");
         }
     }
 }
