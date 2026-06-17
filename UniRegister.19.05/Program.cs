@@ -2,15 +2,16 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            List<Student> students = new List<Student>();
+        // static void Main(string[] args)
+        // {
+            // List<Student> students = new List<Student>(); this is now in app
+            
             // var student1 = 
-            students.Add(new Student("Jorge Jorgensen", 27 , "jj2726", "Law and Order", 1, 943162, 60));
+            // students.Add(new Student("Jorge Jorgensen", 27 , "jj2726", "Law and Order", 1, 943162, 60));
             // var student2 = 
-            students.Add(new Student("Bjørn Bjørnsen", 28 , "bb2826", "CompSci", 2, 243160, 90));
+            // students.Add(new Student("Bjørn Bjørnsen", 28 , "bb2826", "CompSci", 2, 243160, 90));
             // var student3 = 
-            students.Add(new Student("Morten Mortensen", 29, "mm2926", "History", 1, 073195, 30));
+            // students.Add(new Student("Morten Mortensen", 29, "mm2926", "History", 1, 073195, 30));
             
             // student1.PrintInfo();
             // student2.PrintInfo();
@@ -22,18 +23,18 @@
             
             // and now we further improve it by using a foreach!
 
-            foreach (Student student in students)
-            {
-                student.PrintInfo();
-                
-                // if (student.IsRepeating())
-                // {
-                //     Console.WriteLine("[REPEATING]\n");
-                // }
-            }
+            // foreach (Student student in students)
+            // {
+            //     student.PrintInfo();
+            //     
+            //     // if (student.IsRepeating())
+            //     // {
+            //     //     Console.WriteLine("[REPEATING]\n");
+            //     // }
+            // }
 
-            students[1].StudentCard();
+            // students[1].StudentCard();
 
-        }
+        // }
     }
 }
