@@ -8,9 +8,9 @@ internal class App
     public void Start()
     {
         bool isRunning = true;
-        students.Add(new Student("Jorge Jorgensen", 27 , "jj2726", "Law and Order", 1, 943162, 60));
-        students.Add(new Student("Bjørn Bjørnsen", 28 , "bb2826", "CompSci", 2, 243160, 90));
-        students.Add(new Student("Morten Mortensen", 29, "mm2926", "History", 1, 073195, 30));
+        // students.Add(new Student("Jorge Jorgensen", 27 , "jj2726", "Law and Order", 1, 943162, 60));
+        // students.Add(new Student("Bjørn Bjørnsen", 28 , "bb2826", "CompSci", 2, 243160, 90));
+        // students.Add(new Student("Morten Mortensen", 29, "mm2926", "History", 1, 073195, 30));
 
 
         while (isRunning)
@@ -22,20 +22,22 @@ internal class App
 
             string input = Console.ReadLine();
 
-            if (input == "1")
-            {
-                foreach (Student student in students)
-                {
-                    student.PrintInfo();
+            // if (input == "1")
+            // {
+                // foreach (Student student in students)
+                // {
+                    // student.PrintInfo();
                 
                     // if (student.IsRepeating())
                     // {
                     //     Console.WriteLine("[REPEATING]\n");
                     // }
-                }
+                // }
 
-            }
-            
+            // }
+
+            if (input == "1") PrintInfo();
+
             else if (input == "2") AddNewStudent();
 
             else if (input == "3")
@@ -72,5 +74,14 @@ internal class App
 
 
     }
+
+    private void StudentsList()
+    {
+        foreach (Student students in students)
+        {
+            Student.PrintInfo();
+        }
+    }
+    
 
 }
