@@ -6,7 +6,8 @@
         {
 
             var app = new App();
-            app.Start;
+            app.Start();
+            
             // List<Student> students = new List<Student>(); this is now in app
 
             // var student1 = 
